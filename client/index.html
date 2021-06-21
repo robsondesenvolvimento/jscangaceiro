@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Negociações</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-theme.css">
     
 </head>
@@ -58,6 +58,12 @@
         <tfoot>
         </tfoot>
     </table>
-    
+    <script src="./app/domain/Negociacao.js"></script>
+    <script>
+        var negociacao = new Negociacao(new Date(), 2, 100.6);
+        console.log(negociacao);
+        var volume  = negociacao.obterVolume();
+        console.log(volume);
+    </script>
 </body>
 </html>
