@@ -10,7 +10,8 @@ class Negociacoes {
     }
 
     paraArray(){
-        return this._negociacoes;
+        //Programação defensiva
+        return [].concat(this._negociacoes);
     }
 
 }

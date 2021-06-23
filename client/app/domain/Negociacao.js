@@ -16,6 +16,7 @@ class Negociacao {
     }
 
     get data(){
+        //Programação defensiva
         return new Date(this._data.getTime());
     }
 
