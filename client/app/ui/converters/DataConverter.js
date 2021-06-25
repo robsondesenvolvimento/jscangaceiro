@@ -15,6 +15,7 @@ class DataConverter {
     }
 
     static paraTexto(date) {
-        return moment(date).format('DD/MM/YYYY');
+        let options = { year: 'numeric', month: 'numeric', day: 'numeric' };
+        return date.toLocaleString('pt-BR', options);
     }
 }

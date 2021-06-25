@@ -19,12 +19,6 @@ class NegociacaoController {
         this._negociacoesView.update(this._negociacoes);
 
         this._limparFormulario();
-
-        //console.log(negociacao);
-        //console.log(DataConverter.toText(this._inputData.val()));
-        //console.log(DataConverter.toDate(this._inputData.val()));
-        //console.log(moment().format('YYYY-MM-DD h:mm:ss'));
-        //console.log(moment().format())
     }
 
     _criarNegociacao(){
